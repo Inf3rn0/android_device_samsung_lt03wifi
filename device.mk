@@ -275,7 +275,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 $(call inherit-product-if-exists, build/target/product/full_base.mk)
 # Call Samsung LSI board support packages
-$(call inherit-product, hardware/samsung_slsi-cm/exynos5/exynos5.mk)
+$(call inherit-product, hardware/samsung_slsi/exynos5/exynos5.mk)
 $(call inherit-product, hardware/samsung_slsi-cm/exynos5420/exynos5420.mk)
 # Call the proprietary setup
 $(call inherit-product, vendor/samsung/lt03wifi/lt03wifi-vendor.mk)
