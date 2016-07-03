@@ -92,6 +92,10 @@ PRODUCT_PACKAGES += \
     e2fsck \
     setup_fs
 
+# Gello
+PRODUCT_PACKAGES += \
+    Gello
+
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/gps.conf:system/etc/gps.conf \
@@ -132,6 +136,13 @@ PRODUCT_COPY_FILES += \
 # USB
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
+
+# MobiCore setup
+PRODUCT_PACKAGES += \
+    libMcClient \
+    libMcRegistry \
+    libPaApi \
+    libgdmcprov
 
 # Network tools
 PRODUCT_PACKAGES += \
@@ -216,7 +227,8 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     wpa_supplicant \
     libnetcmdiface \
-    macloader
+    macloader \
+    wifiloader
 
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
@@ -225,12 +237,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
-PRODUCT_PROPERTY_OVERRIDES := \
+PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
     ro.com.android.dataroaming=false
 
 ADDITIONAL_DEFAULT_PROPERTIES += \
-    persist.sys.usb.config=mtp \
     ro.allow.mock.location=1 \
     ro.debug_level=0x4948 \
     ro.secure=0
