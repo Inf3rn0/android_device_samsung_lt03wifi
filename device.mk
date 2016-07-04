@@ -93,8 +93,8 @@ PRODUCT_PACKAGES += \
     setup_fs
 
 # Gello
-PRODUCT_PACKAGES += \
-    Gello
+#PRODUCT_PACKAGES += \
+#    Gello
 
 # GPS
 PRODUCT_COPY_FILES += \
