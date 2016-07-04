@@ -32,6 +32,10 @@ TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := cortex-a15
 
+# Media
+# Used if using slsi-cm
+COMMON_GLOBAL_CFLAGS += -DUSE_NATIVE_SEC_NV12TILED       # use format from fw/native
+
 # Bionic Tuning
 TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 
