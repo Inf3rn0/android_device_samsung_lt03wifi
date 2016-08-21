@@ -113,6 +113,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     consumerir.universal5420
 
+# OmniSwitch
+PRODUCT_PACKAGES += \
+    OmniSwitch
+
 # Lights
 PRODUCT_PACKAGES += \
     lights.universal5420
